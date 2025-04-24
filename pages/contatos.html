@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Definindo a codificação de caracteres para o HTML (UTF-8) -->
+    <meta charset="UTF-8">
+    
+    <!-- Configuração de responsividade para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Supernatural</title>
+
+    <!-- Ícone da página (favicon) que aparece na aba do navegador -->
+    <link rel="shortcut icon" type="image/png" href="/img/supernatural2.png"/>
+
+    <!-- Importação do CSS do Bootstrap (framework de estilo) -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Estilos personalizados para manter o rodapé na parte inferior da página -->
+    <style>
+        html, body {
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+        }
+        main {
+          flex: 1;
+        }
+        footer {
+          width: 100%;
+        }
+    </style>
+  </head>
+
+  <body style="background-color: #8B0000;"> <!-- Fundo do corpo da página com classe Bootstrap para fundo cinza claro -->
+    
+    <!-- Cabeçalho com a barra de navegação -->
+    <header>
+      <nav class="navbar navbar-expand-lg text-bg-dark p-3"> <!-- Navbar com fundo escuro e texto claro -->
+        <div class="container-fluid"> <!-- Container fluido para layout responsivo -->
+
+          <!-- Logo e nome do site com texto branco -->
+          <a class="navbar-brand text-white" href="/index.html">
+            <img src="/img/supernatural.png" alt="supernatural" width="30" height="24">
+            Supernatural</a>
+          
+          <!-- Botão do menu hamburguer (aparece em telas pequenas) -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <!-- Menu principal que colapsa em dispositivos móveis -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Itens da navegação -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <!-- Link para a página de produtos -->
+              <li class="nav-item p-1">
+                <a type="button" class="btn btn-danger" href="produtos.html">Produtos</a>
+              </li>
+              
+              <!-- Dropdown com links adicionais -->
+              <li class="nav-item dropdown p-1">
+                <a class="nav-link dropdown-toggle btn btn-danger text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Mais
+                </a>
+                <!-- Itens do dropdown -->
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="contatos.html">Contatos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Em breve</a></li>
+                  <li><a class="dropdown-item" href="#">Em breve</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Formulário de pesquisa na navbar -->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="search">
+              <button class="btn btn-danger" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+      <!-- Conteúdo será adicionado aqui futuramente -->
+    </main>
+
+    <!-- Rodapé com fundo escuro, texto claro e borda vermelha no topo -->
+    <footer class="bg-dark text-light text-center p-3 border-top border-danger border-4">
+      <p class="p-3 y-0 container-fluid">&copy; Julio Martins</p>
+    </footer>
+
+    <!-- Importação do JS do Bootstrap (inclui Popper.js para funcionalidades como dropdowns) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
